@@ -1,4 +1,4 @@
-module github.com/clebertsuconic/clebert
+module github.com/clebertsuconic/example
 
 go 1.13
 
