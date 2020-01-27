@@ -1,4 +1,4 @@
-package example
+package clebert
 
 import (
 	"bytes"
@@ -11,9 +11,9 @@ import (
 	"github.com/miekg/dns"
 )
 
-func TestExample(t *testing.T) {
+func TestClebert(t *testing.T) {
 	// Create a new Example Plugin. Use the test.ErrorHandler as the next plugin.
-	x := Example{Next: test.ErrorHandler()}
+	x := Clebert{Next: test.ErrorHandler()}
 
 	// Setup a new output buffer that is *not* standard output, so we can check if
 	// example is really being printed.

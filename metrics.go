@@ -1,4 +1,4 @@
-package example
+package clebert
 
 import (
 	"sync"

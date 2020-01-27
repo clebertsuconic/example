@@ -1,4 +1,4 @@
-module github.com/coredns/example
+module github.com/clebertsuconic/clebert
 
 go 1.13
 
