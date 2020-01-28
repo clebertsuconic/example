@@ -1,4 +1,4 @@
-package clebert
+package example
 
 import (
 	"fmt"

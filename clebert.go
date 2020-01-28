@@ -1,7 +1,7 @@
-// package clebert is a CoreDNS plugin that prints "example" to stdout on every packet received.
+// package example is a CoreDNS plugin that prints "example" to stdout on every packet received.
 //
 // It serves as an example CoreDNS plugin with numerous code comments.
-package clebert
+package example
 
 import (
 	"context"
@@ -28,7 +28,7 @@ type Clebert struct {
 // ServeDNS implements the plugin.Handler interface. This method gets called when example is used
 // in a Server.
 func (e Clebert) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (int, error) {
-	fmt.Println("yay!!!!")
+	fmt.Println("yay!!!! finally")
 	// This function could be simpler. I.e. just fmt.Println("example") here, but we want to show
 	// a slightly more complex example as to make this more interesting.
 	// Here we wrap the dns.ResponseWriter in a new ResponseWriter and call the next plugin, when the
